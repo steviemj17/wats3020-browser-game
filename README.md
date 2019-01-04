@@ -25,7 +25,7 @@ properties, which refer to `Player` class objects. These two classes make up
 the entire logic of the game itself.
 
 Outside of the class structure, there are a few event listeners to watch for
-game-wide events. The first listener looks for the `DOMContentLoaded` event,
+game-wide events. The first listener looks for the [DOMContentLoaded](https://developer.mozilla.org/en-US/docs/Web/Events/DOMContentLoaded) event,
 which tells the program that it's safe to run the game. The other listeners
 are watching for `win` and `draw` events in order to provide a game end screen.
 
@@ -55,7 +55,9 @@ few steps for each turn. Here is the logical flow of the game.
 8. If the player's move is not a winning move, the game checks to see if there are any more moves left (since the game has only 9 tiles to claim, there can only be 9 moves in a game).
 9. If there are no more possible moves (meaning 9 moves have been completed), then the game ends by showing the "draw" screen.
 10. If there are still some possible moves (meaning fewer than 9 moves have been completed), then the game switches players.
-11. The next player is prompted to move, and the logic in steps 5 thru 10 is repeated.
+11. The next player is prompted to move, and the logic in steps 5 thru 10 is repeated.  
+
+*Note:* When you're provided a list of logical steps as you see above it can be useful to draw a flow chart.  You can do this on paper. It can help you when you are debugging the application to see if your code is going where you expect when you run it.  You can also label the methods or functions that implement the steps.  This is not required, but you can turn in an image of your flow chart as a stretch goal. Here's a link to some [Tic Tac Toe flowcharts](https://www.google.com/search?q=tic+tac+toe+flow+chart&tbm=isch), but the rules they are describing may not be the same as the rules above, so make your flowchart specific to the rules above.   
 
 These steps are translated almost directly into class methods and functions that are triggered by event listeners in the code. There is very little data stored about the game, since the only data that is needed to determine the win state is what tiles each player has claimed. 
 
@@ -127,6 +129,7 @@ project more interesting and personal. (Feel free to use Bootstrap or jQuery
 JavaScript components to make these stretch goals more interesting if you
 prefer.)
 
+* Create a flowchart for the logic you implement. 
 * Re-style the game so it fits your design concept.
 * Currently, when the user clicks "Play again", the game reloads the HTML page
   reset itself. It would be better if the game were reset using JavaScript.
