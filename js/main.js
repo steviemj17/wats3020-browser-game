@@ -11,7 +11,7 @@ class TicTacToe {
   constructor(){
       // TODO: Set up `this.player1` and `this.player2` properties.
       // These properties should be new Player class instances.
-      // You may set the "token" to anything that corresponds to a Glyphicon
+      // You may set the "token" to anything that corresponds to a Icon
       // icon name ('heart', 'star', 'remove-sign', 'unchecked', 'bell',
       // 'certificate', etc.)
 
@@ -124,7 +124,7 @@ class TicTacToe {
       // TODO: Claim this spot in the `this.gameState` array for the player.
 
       // TODO: Set the class on the `event.target` to show the player's token. The class
-      // should be: `tile played glyphicon glyphicon-${this.currentPlayer.token}`.
+      // should be: `tile played fas fa-${this.currentPlayer.token}`.
   }
   switchPlayer(){
       // This method handles switching between players after each move.
@@ -140,7 +140,7 @@ class TicTacToe {
 
       // TODO: Set the `class` attribute on `this.currentPlayerToken` to
       // reflect the current player's token. (Note: You will need to use the
-      // proper Glyphicon classes combined with the `this.currentPlayer.token`
+      // proper Icon classes combined with the `this.currentPlayer.token`
       // value.)
   }
   setUpTileListeners(){
@@ -193,7 +193,7 @@ class TicTacToe {
               // TODO: Create a new `span` element called `newTile`.
 
               // TODO: Set the `class` attribute on `newTile` to equal the
-              // placeholder styles ("tile glyphicon glyphicon-question-sign").
+              // placeholder styles ("tile fas fa-question-sign").
 
               // TODO: Set the `data-x` attribute on the `newTile` element
               // equal to `i`.
@@ -226,7 +226,7 @@ class TicTacToe {
 
       // TODO: Set `this.currentPlayer` equal to `this.player1`.
       
-      // TODO: Set `this.currentPlayerToken` class equal to `glyphicon glyphicon-${this.currentPlayer.token}`
+      // TODO: Set `this.currentPlayerToken` class equal to `fas fa-${this.currentPlayer.token}`
   }
   start(){
       // This method handles the logic to create a new game. It primarily has
